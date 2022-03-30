@@ -1,0 +1,14 @@
+---
+---
+
+@import "default";
+@import "base";
+
+.half-width > img {
+    width: 33%;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+}

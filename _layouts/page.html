@@ -1,0 +1,29 @@
+﻿---
+layout: main
+---
+<header>
+  <a id="home" href="{{"/" | relative_url}}"><img src="{{ "/img/logo.png" | relative_url}}" alt="На главную" /></a>
+</header>
+
+<nav id="menu">
+  <ul>
+    <li><a href="{{"/articles" | relative_url}}"><span class="icon-articles"></span> Статьи</a></li>
+    <li><a href="{{"/posts" | relative_url}}"><span class="icon-blog"></span> Блог</a></li>
+  </ul>
+</nav>
+
+<main>
+  {{ content }}
+</main>
+
+<nav id="profiles">
+  <ul>
+    <li><a href="https://github.com/markshevchenko"><span class="icon-github"></span> GitHub</a></li>
+    <li><a href="https://stackoverflow.com/users/1051621/mark-shevchenko"><span class="icon-stackoverflow"></span> Stack Overflow</a></li>
+    <li><a href="https://ru.stackoverflow.com/users/182162/mark-shevchenko"><span class="icon-stackoverflow"></span> Stack Overflow/рус</a></li>
+  </ul>
+</nav>
+
+<footer>
+  Написать мне в <a href="tg://resolve?domain=markshevchenko"><img src="https://img.icons8.com/color/50/000000/telegram-app.png" style="width: auto; height: 1em" />Telegram</a>
+</footer>

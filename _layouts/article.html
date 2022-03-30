@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+<h1>{{ page.title }}{% if page.subtitle %}<br /><small>{{ page.subtitle }}</small>{% endif %}</h1>
+{% if page.description %}<p>{{ page.description }}</p>{% endif %}
+
+{{ content }}
+
+{% if page.previous or page.up or page.next %}
+<div id="relations">
+  <ul>
+    <li>{% if page.previous %}<a href="{{ page.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+    <li>{% if page.up %}<a href="{{ page.up }}">Up</a>{% else %}Up{% endif %}</li>
+    <li>{% if page.next %}<a href="{{ page.next }}">Next</a>{% else %}Next{% endif %}</li>
+  </ul>
+</div>
+{% endif %}
+
+{% include disqus.html %}
+{% include mathjax.html %}

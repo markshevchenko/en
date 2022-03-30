@@ -1,0 +1,55 @@
+lang: ru-RU
+encoding: utf-8
+
+title: "Profession: Programmer"
+description: "30 years of programming."
+
+author: "Mark Shevchenko"
+url: https://markshevchenko.pro
+
+permalink: pretty
+highlighter: rouge
+
+paginate: 10
+paginate_path: "/posts/:num"
+
+exclude:
+  - Gemfile
+  - README.md
+
+markdown: kramdown
+
+kramdown:
+  auto_ids: true
+
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+  
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+defaults:
+  -
+    scope:
+      path: "articles"
+      type: "pages"
+    values:
+      layout: "article"
+      comments: "true"
+  - 
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      comments: "true"
+      image: /img/markshevchenko.jpg
+  -
+    scope:
+      path: "presentations"
+      type: "pages"
+    values:
+      layout: "presentation"
